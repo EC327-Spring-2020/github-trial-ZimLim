@@ -1,0 +1,19 @@
+31    mov r0, 1	
+32   mov r1, [r0] ;r1 = a
+33   mov r0, 2
+34   mov r2, [r0] ;r2 = b
+35   mov r0, 3
+36   mov r3, [r0] ;r3 = c 
+37   mov r4, 0
+38   mov r5, 0
+39   cmp r2, r5 ; check if enough times added
+40   je 44
+41   inc r5 ; increase the counter
+42   add r4, r1 ; adding the values
+43   jump 39
+44   add r4, r3
+45   inc r0	; r0 = 4 to store the final result
+46   mov r4, [r0] ;storing at memory cell 4
+
+9001c0409002c0809003c0c0910091408085402c10055101202751031000c100
+

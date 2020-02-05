@@ -1,0 +1,20 @@
+mov r0, 1
+mov r1, 2
+mov [r0], r0
+mov [r1], r1
+mov r2, 0
+mov r3, 3
+mov r4, 9
+cmp r3, r4 ;compares to check if all slots has been filled
+je 47 	   ;jumps when all slots are filled
+add r2, [r0]
+add r2, [r1]
+mov [r3], r2 ; sets the next empty slot with the appropriate number
+inc r0
+inc r1
+inc r3
+jmp 38	; loops back to compare again
+halt
+
+90019042b000b041908090c39109914080c44033c1405085c1415081b0c210001001100320270000
+
